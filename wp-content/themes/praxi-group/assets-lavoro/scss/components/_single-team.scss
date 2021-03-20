@@ -1,0 +1,45 @@
+.single--team {
+	position: relative;
+	width: 100%;
+	max-width: 250px;
+	margin: 40px auto 0;
+	&-image {
+		width: 100%;
+		background-size: cover !important;
+		background-repeat: no-repeat !important;
+		background-position: center center !important;
+		&:before {
+			content: '';
+			display: block;
+			padding-top: 100%;
+		}
+	}
+	h6 {
+		position: relative;
+		width: 100%;
+		text-align: center;
+		font-family: $title;
+		font-weight: 700;
+		font-size: 18px;
+		color: $primary;
+		margin-top: 20px;
+		span {
+			display: block;
+			font-size: 15px;
+			color: $pewtre-blue;
+		}
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+	.single--review {
+		p,
+		strong {
+			font-size: 16px;
+		}
+	}
+}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

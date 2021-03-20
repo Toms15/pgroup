@@ -1,0 +1,15 @@
+section.section--content {
+	position: relative;
+	z-index: 1;
+	width: 100%;
+	.button--section {
+		text-align: center;
+		margin-top: 30px;
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

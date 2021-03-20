@@ -1,0 +1,34 @@
+.has-padding-top-bottom {
+	padding: 100px 0;
+}
+.has-padding-top {
+	padding: 100px 0 0;
+}
+.has-padding-bottom {
+	padding: 0 0 100px !important;
+}
+.hide-on-mobile {
+	display: none !important;
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.has-padding-top-bottom {
+		padding: 150px 0;
+	}
+	.has-padding-top {
+		padding: 150px 0 0;
+	}
+	.has-padding-bottom {
+		padding: 0 0 150px !important;
+	}
+	.hide-on-mobile {
+		display: block !important;
+	}
+	.show-only-mobile {
+		display: none !important;
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

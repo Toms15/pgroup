@@ -1,0 +1,39 @@
+.subtitle--section {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	h6 {
+		font-family: $title;
+		font-weight: 700;
+		font-size: 16px;
+		letter-spacing: 0.03em;
+		line-height: 26px;
+		margin-top: 20px;
+		text-transform: uppercase;
+		color: $black;
+	}
+	img {
+		margin: 20px auto 0;
+		height: 80px;
+		width: auto;
+	}
+	.btn {
+		margin-top: 30px;
+	}
+	&-centered {
+		h1,
+		h2 {
+			text-align: center;
+		}
+		p {
+			text-align: center;
+			margin: 20px auto;
+		}
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

@@ -1,0 +1,17 @@
+body {
+	background-color: $background;
+	position: relative;
+	width: 100%;
+}
+.grid-container {
+	max-width: 1400px !important;
+}
+// .column {
+// 	position: relative;
+// }
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

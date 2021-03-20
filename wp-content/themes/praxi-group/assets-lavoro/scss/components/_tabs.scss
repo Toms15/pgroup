@@ -1,0 +1,170 @@
+.tabs {
+	border: 0;
+	text-align: center;
+	margin-top: 20px;
+	background-color: transparent;
+	.tabs-title {
+		background-color: $white;
+		box-shadow: 0px 0px 30px rgba($black,.05);
+		position: relative;
+		border-radius: 8px;
+		padding: 20px;
+		width: 100%;
+		max-width: 450px;
+		height: 120px;
+		margin: 20px 0 0;
+		border: 2px solid $white;
+		opacity: 1;
+		transition: opacity 200ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+		a {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			font-family: $title;
+			font-weight: 700;
+			font-size: 20px;
+			color: $primary;
+			padding: 0;
+			text-align: left;
+			width: 100%;
+			height: 100%;
+			img {
+				height: 80px;
+				width: 80px;
+				margin-right: 14px;
+			}
+		}
+		&:focus,
+		&:active,
+		&.is-active {
+			border: 2px solid $lavoro;
+			a {
+				background-color: $white;
+			}
+		}
+		&.has--opacity {
+			opacity: 0.2;
+			transition: opacity 200ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+		}
+	}
+	&#maps-tabs {
+		.tabs-title {
+			height: 60px;
+			a {
+				justify-content: center;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+		}
+	}
+	&#agreements-tabs {
+		.tabs-title {
+			width: 100%;
+			height: 60px;
+			a {
+				justify-content: center;
+				font-size: 16px;
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+.tabs-content {
+	border: 0;
+	margin: 20px 0;
+	width: 100%;
+	position: relative;
+	.single--document {
+		height: 80px;
+		border-bottom: 1px solid rgba($grey,.5);
+		display: flex;
+		align-items: center;
+		justify-content: flex-start;
+		font-family: $text;
+		font-weight: 400;
+		font-size: 15px;
+		i {
+			color: $lavoro;
+			margin-right: 10px;
+			font-size: 18px;
+		}
+	}
+	.single--agreement-logo {
+		position: relative;
+		width: 100%;
+		img {
+			width: 100%;
+			height: auto;
+			margin: 20px 0;
+		}
+	}
+	.single--agreement-hotel {
+		position: relative;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 20px;
+		margin: 20px auto;
+		border: 1px solid $grey;
+		border-radius: 8px;
+		min-height: 120px;
+		h6 {
+			font-family: $title;
+			font-weight: 700;
+			font-size: 15px;
+			color: $primary;
+			text-align: center;
+			span {
+				font-family: $text;
+				font-weight: 400;
+				font-size: 12px;
+			}
+		}
+	}
+	&[data-tabs-content='maps-tabs'] {
+		.tabs-panel {
+			padding: 0;
+		}
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.tabs {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.tabs-title {
+			margin: 0 10px 0;
+		}
+		&#agreements-tabs {
+			.tabs-title {
+				max-width: 25%;
+				height: 60px;
+				a {
+					justify-content: center;
+					font-size: 16px;
+					text-transform: uppercase;
+				}
+			}
+		}
+	}
+	.tabs-content {
+		.single--document {
+			padding-right: 16px;
+		}
+		.single--agreement-logo {
+			img {
+				width: 80%;
+				margin: 20px auto;
+			}
+		}
+		.single--agreement-hotel {
+			width: 80%;
+		}
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

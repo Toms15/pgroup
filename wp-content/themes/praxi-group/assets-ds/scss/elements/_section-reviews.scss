@@ -1,0 +1,24 @@
+section.section--content-reviews {
+	#reviews {
+		margin-top: 20px;
+		height: 300px;
+		position: relative;
+		width: 100%;
+		.swiper-pagination {
+			bottom: 0;
+			.swiper-pagination-bullet {
+				background-color: rgba($black,.5);
+				opacity: 1;
+				&-active {
+					background-color: $white;
+				}
+			}
+		}
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

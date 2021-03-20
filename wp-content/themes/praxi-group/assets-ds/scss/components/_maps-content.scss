@@ -1,0 +1,57 @@
+.maps--content {
+	position: relative;
+	background-color: $white;
+	box-shadow: 0px 0px 30px rgba($black,.05);
+	margin-top: 20px;
+	border-radius: 8px;
+	&-view {
+		width: 100%;
+		height: 375px;
+	}
+	&-info {
+		padding: 20px;
+		h4 {
+			font-family: $title;
+			font-weight: 700;
+			font-size: 26px;
+			letter-spacing: -0.01em;
+			line-height: 50px;
+			text-transform: uppercase;
+			color: $primary;
+		}
+		.paragraph {
+			margin-bottom: 20px;
+			h6 {
+				font-family: $title;
+				font-weight: 700;
+				font-size: 15px;
+				letter-spacing: -0.01em;
+				color: $primary;
+			}
+			p {
+				font-family: $text;
+				font-weight: 300;
+				color: $black;
+				font-size: 15px;
+				line-height: 22px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.maps--content {
+		&-view {
+			height: 500px;
+		}
+		&-info {
+			height: 100%;
+			padding: 70px;
+		}
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

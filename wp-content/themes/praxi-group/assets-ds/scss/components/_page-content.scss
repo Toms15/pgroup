@@ -1,0 +1,96 @@
+.page--content {
+	position: relative;
+	width: 100%;
+	margin-bottom: 40px;
+	.paragraph {
+		blockquote {
+			background-color: $white;
+			box-shadow: 0px 0px 30px rgba($black,.05);
+			padding: 20px;
+			border-radius: 8px;
+			margin-top: 40px;
+			h3 {
+				margin-top: 0;
+				text-transform: uppercase;
+				color: $primary;
+			}
+			p {
+				color: $primary;
+				margin-top: 0;
+			}
+		}
+		h2 {
+			font-family: $title;
+			font-weight: 700;
+			color: $ds;
+			font-size: 22px;
+			margin-bottom: 10px;
+			margin-top: 40px;
+		}
+		h3 {
+			font-family: $title;
+			font-weight: 700;
+			color: $ds;
+			font-size: 18px;
+			margin-bottom: 10px;
+			margin-top: 40px;
+		}
+		p {
+			font-family: $text;
+			font-weight: 300;
+			font-size: 15px;
+			color: $black;
+			margin-top: 10px;
+			strong {
+				font-weight: 400;
+			}
+		}
+		a {
+			color: $ds;
+			border-bottom: 1px solid $ds;
+			&:hover {
+				color: $dark-blue;
+				border-bottom: 1px solid $dark-blue;
+			}
+		}
+		ul,
+		ol {
+			margin: 0;
+			padding: 0;
+			li {
+				font-family: $text;
+				font-weight: 300;
+				font-size: 15px;
+				color: $black;
+			}
+		}
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.page--content {
+		margin-bottom: 80px;
+		.paragraph {
+			h2 {
+				font-size: 26px;
+			}
+			h3 {
+				font-size: 20px;
+			}
+			ul,
+			ol {
+				padding-left: 14px;
+				li {
+					font-size: 16px;
+				}
+			}
+			p {
+				font-size: 16px;
+			}
+		}
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

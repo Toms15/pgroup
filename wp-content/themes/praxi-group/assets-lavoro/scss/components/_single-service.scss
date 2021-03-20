@@ -1,0 +1,76 @@
+.single--service {
+	background-color: $white;
+	box-shadow: 0px 0px 30px rgba($black,.05);
+	position: relative;
+	border-radius: 8px;
+	padding: 20px;
+	width: 100%;
+	height: 120px;
+	margin: 16px 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	font-family: $title;
+	font-weight: 700;
+	font-size: 20px;
+	color: $primary;
+	text-align: left;
+	width: 100%;
+	cursor: pointer;
+	img {
+		height: 80px;
+		width: 80px;
+		margin-right: 14px;
+	}
+	&-help {
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: flex-start;
+		background-color: rgba($pewtre-blue,.4);
+		h6 {
+			font-family: $title;
+			font-weight: 700;
+			font-size: 16px;
+			color: $lavoro;
+		}
+		p {
+			font-family: $title;
+			font-weight: 700;
+			font-size: 16px;
+			color: $primary;	
+			width: 85%;
+		}
+		i {
+			width: 32px;
+			height: 32px;
+			border-radius: 100%;
+			border: 1px solid $primary;
+			color: $primary;
+			font-size: 14px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+			transition: right 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+		}
+		&:hover {
+			i {
+				transition: right 500ms cubic-bezier(0.645, 0.045, 0.355, 1.000);
+				right: 30px;
+			}
+		}
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.single--service {
+		max-width: calc(100% - 16px);
+		margin: 0 8px 16px;
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

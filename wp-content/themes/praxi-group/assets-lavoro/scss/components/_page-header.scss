@@ -1,0 +1,28 @@
+.page--header {
+	background-color: $lavoro;
+	position: relative;
+	padding: 40px 0;
+	h1 {
+		font-family: $title;
+		font-weight: 700;
+		font-size: 38px;
+		letter-spacing: -0.01em;
+		line-height: 50px;
+		color: $white;
+		width: 100%;
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.page--header {
+		h1 {
+			width: 80%;
+			font-size: 60px;
+			line-height: 74px;
+		}
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

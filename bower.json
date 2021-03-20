@@ -1,0 +1,38 @@
+{
+  "name": "wp-gulp",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "Toms15 <info@tommasocostantini.it>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "foundation-sites": "^6.4.3",
+    "swiper": "^4.0.7",
+    "jquery.cookiebar": "^1.2.1",
+    "vanilla-lazyload": "^12.0.0",
+    "aos": "^2.2.0"
+  },
+  "overrides": {
+    "foundation-sites": {
+      "main": [
+        "dist/css/foundation.min.css",
+        "dist/js/foundation.min.js"
+      ]
+    },
+    "swiper": {
+      "main": [
+        "dist/js/swiper.min.js",
+        "dist/css/swiper.min.css"
+      ]
+    }
+  }
+}

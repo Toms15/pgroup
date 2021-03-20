@@ -1,0 +1,90 @@
+.title--section {
+	position: relative;
+	width: 100%;
+	text-align: center;
+	h1,
+	h2 {
+		font-family: $title;
+		font-weight: 700;
+		font-size: 38px;
+		letter-spacing: -0.01em;
+		line-height: 50px;
+	}
+	p {
+		margin-top: 20px;
+		width: 100%;
+		font-family: $text;
+		font-size: 16px;
+		line-height: 22px;
+		font-weight: 300;
+	}
+	img {
+		margin-top: 20px;
+		height: 38px;
+		width: auto;
+	}
+	.department-logo {
+		width: 100%;
+		max-width: 250px;
+		height: auto;
+		margin-top: 0;
+		margin-bottom: 20px;
+	}
+	.btn {
+		margin-top: 30px;
+	}
+	&-centered {
+		h1,
+		h2 {
+			text-align: center;
+		}
+		p {
+			text-align: center;
+			margin: 20px auto;
+		}
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.title--section {
+		height: 100%;
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		flex-direction: column;
+		text-align: left;
+		h1,
+		h2 {
+			font-size: 60px;
+			line-height: 74px;
+		}
+		p {
+			width: 64%;
+			text-align: left;
+		}
+		.department-logo {
+			max-width: 370px;
+			margin-bottom: 50px;
+		}
+		&-centered {
+			align-items: center;
+			h1,
+			h2 {
+				text-align: center;
+			}
+			p {
+				text-align: center;
+			}
+		}
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+	.title--section {
+		p {
+			width: 100%;
+		}
+	}
+}

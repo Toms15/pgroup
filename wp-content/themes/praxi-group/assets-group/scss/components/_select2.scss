@@ -1,0 +1,70 @@
+.select2 {
+	height: 50px;
+	width: 100% !important;
+	position: relative;
+	margin-bottom: 1rem;
+	.selection {
+		width: 100% !important;
+		display: block;
+	}
+	.select2-selection {
+		height: 50px;
+		border: 1px solid rgba($grey,.2);
+		border-radius: 4px;
+		width: 100%;
+		.select2-selection__rendered {
+			height: 50px;
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			font-size: 16px;
+			line-height: 16px;
+			font-family: $title;
+			font-weight: 700;
+			color: $dark-blue;
+			word-wrap: break-word !important;
+			text-overflow: inherit !important;
+			white-space: normal !important;
+			.select2-selection__placeholder {
+				height: 50px;
+				display: flex;
+				align-items: center;
+				justify-content: flex-start;
+				font-size: 16px;
+				font-family: $title;
+				font-weight: 700;
+				color: rgba($grey,.5);
+			}
+		}
+		.select2-selection__arrow {
+			height: 50px !important;
+		}
+	}
+}
+.select2-dropdown {
+	border: 1px solid rgba($grey,.2);
+	border-radius: 4px;
+	font-size: 16px;
+	font-family: $title;
+	font-weight: 700;
+	color: $dark-blue;
+	.select2-results__option {
+		&:hover {
+			background-color: $primary !important;
+		}
+	}
+	.select2-results__option--highlighted {
+		background-color: $dark-blue !important;
+		color: $white !important;
+	}
+}
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+	.select2 {
+		width: 95% !important;
+	}
+}
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

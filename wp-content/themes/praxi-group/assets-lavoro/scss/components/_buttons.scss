@@ -1,0 +1,35 @@
+.btn {
+	background-color: $lavoro;
+	border-radius: 4px;
+	height: 48px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	color: $background;
+	font-family: $title;
+	font-weight: 700;
+	font-size: 16px;
+	letter-spacing: 0.03em;
+	text-transform: uppercase;
+	padding: 0 20px;
+	&:hover {
+		background-color: $primary;
+		color: $background;
+	}
+	&--centered {
+		margin: 0 auto;
+	}
+	&--white {
+		background-color: $white;
+		color: $lavoro;
+		&:hover {
+			background-color: $background;
+			color: $lavoro;
+		}
+	}
+	&--custom {
+		&:hover {
+			background-color: $primary !important;
+		}
+	}
+}
