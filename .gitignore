@@ -1,5 +1,5 @@
 /node_modules
 /bower_components
-/wp-config-lab
-/wp-config-live
-/wp-config-local
+/wp-config-lab.php
+/wp-config-live.php
+/wp-config-local.php
