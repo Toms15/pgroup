@@ -39,10 +39,11 @@ $section_id = get_sub_field('section_id');
 								$button_text = get_sub_field('button_text');
 								$button_link = get_sub_field('button_link');
 								$button_style = get_sub_field('button_style');
+								$button_target = get_sub_field('button_target');
 								$button_background = get_sub_field('button_background');
 								$button_text_color = get_sub_field('button_text_color');
 								?>
-									<a data-aos="fade" data-aos-duration="1500" data-aos-delay="400" href="<?php echo $button_link; ?>" class="btn btn--<?php echo $button_style; ?>" style="background-color: <?php echo $button_background; ?>; color: <?php echo $button_text_color; ?>;"><?php echo $button_text; ?></a>
+									<a data-aos="fade" data-aos-duration="1500" data-aos-delay="400" target="_<?php echo $button_target; ?>" href="<?php echo $button_link; ?>" class="btn btn--<?php echo $button_style; ?>" style="background-color: <?php echo $button_background; ?>; color: <?php echo $button_text_color; ?>;"><?php echo $button_text; ?></a>
 								<?php endwhile;
 							endif; ?>
 						</div>
@@ -69,10 +70,11 @@ $section_id = get_sub_field('section_id');
 								$button_text = get_sub_field('button_text');
 								$button_link = get_sub_field('button_link');
 								$button_style = get_sub_field('button_style');
+								$button_target = get_sub_field('button_target');
 								$button_background = get_sub_field('button_background');
 								$button_text_color = get_sub_field('button_text_color');
 								?>
-									<a data-aos="fade" data-aos-duration="1500" data-aos-delay="400" href="<?php echo $button_link; ?>" class="btn btn--<?php echo $button_style; ?>" style="background-color: <?php echo $button_background; ?>; color: <?php echo $button_text_color; ?>;"><?php echo $button_text; ?></a>
+									<a data-aos="fade" data-aos-duration="1500" data-aos-delay="400" target="_<?php echo $button_target; ?>" href="<?php echo $button_link; ?>" class="btn btn--<?php echo $button_style; ?>" style="background-color: <?php echo $button_background; ?>; color: <?php echo $button_text_color; ?>;"><?php echo $button_text; ?></a>
 								<?php endwhile;
 							endif; ?>
 						</div>
