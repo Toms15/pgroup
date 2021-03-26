@@ -91,10 +91,10 @@ $color_scheme = get_field('color_scheme', 'option');
 								</li>
 							<?php else: ?>
 								<li>
-									<a href="/privacy" target="_blank">Privacy Policy</a>
+									<a href="http://praxigroup.officine06lab.com/wp-content/uploads/2021/03/Privacy-Policy-Praxis-DS.pdf" target="_blank">Privacy Policy</a>
 								</li>
 								<li>
-									<a href="/privacy" target="_blank">Privacy Policy Praxi Medica</a>
+									<a href="http://praxigroup.officine06lab.com/wp-content/uploads/2021/03/Privacy-Policy-Praxi-Medica.pdf" target="_blank">Privacy Policy Praxi Medica</a>
 								</li>
 								<li>
 									<a href="http://praxigroup.officine06lab.com/wp-content/uploads/2021/03/Privacy-Policy-PraxiMedica-healthcare.pdf" target="_blank">Privacy Policy Praxi Medica Healthcare</a>
