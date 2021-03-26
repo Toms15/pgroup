@@ -61,15 +61,16 @@ $color_scheme = get_field('color_scheme', 'option');
 							</p>
 						<?php endif; ?>
 						<p>
+							<strong>Telefono</strong>
 							<?php if($color_scheme == 'praxi-lavoro'): ?>
-								<strong>Telefono</strong>
 								+39 06 7008388 (int. 2)
 							<?php else: ?>
-								<strong>Telefono</strong>
-								+39 06 7008388<br><br>
-								<strong>Per gli uffici amministrativi</strong>
-								+39 06 7008388 (int. 4)
+								+39 06 7008388
 							<?php endif; ?>
+						</p>
+						<p>
+							<strong>Per gli uffici amministrativi</strong>
+							+39 06 7008388 (int. 4)
 						</p>
 						<p>
 							<strong>E-mail</strong>
