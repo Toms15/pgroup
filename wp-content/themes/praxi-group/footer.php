@@ -61,11 +61,14 @@ $color_scheme = get_field('color_scheme', 'option');
 							</p>
 						<?php endif; ?>
 						<p>
-							<strong>Telefono</strong>
 							<?php if($color_scheme == 'praxi-lavoro'): ?>
+								<strong>Telefono</strong>
 								+39 06 7008388 (int. 2)
 							<?php else: ?>
-								+39 06 7008388
+								<strong>Telefono</strong>
+								+39 06 7008388<br><br>
+								<strong>Per gli uffici amministrativi</strong>
+								+39 06 7008388 (int. 4)
 							<?php endif; ?>
 						</p>
 						<p>
@@ -82,9 +85,21 @@ $color_scheme = get_field('color_scheme', 'option');
 					<div class="footer--column">
 						<h4>Link utili</h4>
 						<ul>
-							<li>
-								<a href="/privacy" target="_blank">Privacy Policy</a>
-							</li>
+							<?php if($color_scheme == 'praxi-lavoro'): ?>
+								<li>
+									<a href="http://praxigroup.officine06lab.com/wp-content/uploads/2021/03/Privacy-Policy-PraxiMedica-healthcare.pdf" target="_blank">Privacy Policy</a>
+								</li>
+							<?php else: ?>
+								<li>
+									<a href="/privacy" target="_blank">Privacy Policy</a>
+								</li>
+								<li>
+									<a href="/privacy" target="_blank">Privacy Policy Praxi Medica</a>
+								</li>
+								<li>
+									<a href="http://praxigroup.officine06lab.com/wp-content/uploads/2021/03/Privacy-Policy-PraxiMedica-healthcare.pdf" target="_blank">Privacy Policy Praxi Medica Healthcare</a>
+								</li>
+							<?php endif; ?>
 							<li>
 								<a href="/cookie" target="_blank">Cookie Policy</a>
 							</li>
