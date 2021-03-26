@@ -69,7 +69,7 @@ $color_scheme = get_field('color_scheme', 'option');
 							<?php endif; ?>
 						</p>
 						<p>
-							<strong>Per gli uffici amministrativi</strong>
+							<strong>Uffici amministrativi</strong>
 							+39 06 7008388 (int. 4)
 						</p>
 						<p>
