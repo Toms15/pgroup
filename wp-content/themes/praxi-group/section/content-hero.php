@@ -77,7 +77,7 @@ $illustration = get_sub_field('illustration');
 				<div class="modal--service-content">
 					<?php echo $description; ?>
 					<?php if($button_link): ?>
-						<a href="<?php echo $button_link; ?>" class="btn"><?php echo __('Download'); ?></a>
+						<a href="<?php echo $button_link; ?>" target="_<?php echo $button_target; ?>" class="btn"><?php echo __('Download'); ?></a>
 					<?php endif; ?>
 				</div>
 			</div>
