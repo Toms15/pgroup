@@ -42,7 +42,7 @@ $illustration = get_sub_field('illustration');
 						$button_slug = sanitize_title($button_text);
 						?>
 							<?php if($description): ?>
-								<span data-modal="<?php echo $button_slug; ?>" data-aos="fade" data-aos-duration="1500" data-aos-delay="400" class="btn btn--<?php echo $button_style; ?>" style="background-color: <?php echo $button_background; ?>; color: <?php echo $button_text_color; ?>;"><?php echo $button_text; ?></span>
+								<span data-modal="<?php echo $button_slug; ?>" data-aos="fade" data-aos-duration="1500" data-aos-delay="400" class="btn--fake btn btn--<?php echo $button_style; ?>" style="background-color: <?php echo $button_background; ?>; color: <?php echo $button_text_color; ?>;"><?php echo $button_text; ?></span>
 							<?php else: ?>
 								<a data-aos="fade" data-aos-duration="1500" data-aos-delay="400" target="_<?php echo $button_target; ?>" href="<?php echo $button_link; ?>" class="btn btn--<?php echo $button_style; ?>" style="background-color: <?php echo $button_background; ?>; color: <?php echo $button_text_color; ?>;"><?php echo $button_text; ?></a>
 							<?php endif; ?>
