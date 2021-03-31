@@ -31,6 +31,23 @@ $illustration = get_sub_field('illustration');
 					<?php if($logo): ?>
 						<img src="<?php echo $logo['url']; ?>" alt="<?php echo $logo['alt']; ?>">
 					<?php endif; ?>
+					<?php if( have_rows('buttons') ): while( have_rows('buttons') ) : the_row();
+						$button_text = get_sub_field('button_text');
+						$button_link = get_sub_field('button_link');
+						$button_style = get_sub_field('button_style');
+						$button_target = get_sub_field('button_target');
+						$button_background = get_sub_field('button_background');
+						$button_text_color = get_sub_field('button_text_color');
+						$description = get_sub_field('description');
+						$button_slug = sanitize_title($button_text);
+						?>
+							<?php if($description): ?>
+								<span data-modal="<?php echo $button_slug; ?>" data-aos="fade" data-aos-duration="1500" data-aos-delay="400" class="btn btn--<?php echo $button_style; ?>" style="background-color: <?php echo $button_background; ?>; color: <?php echo $button_text_color; ?>;"><?php echo $button_text; ?></span>
+							<?php else: ?>
+								<a data-aos="fade" data-aos-duration="1500" data-aos-delay="400" target="_<?php echo $button_target; ?>" href="<?php echo $button_link; ?>" class="btn btn--<?php echo $button_style; ?>" style="background-color: <?php echo $button_background; ?>; color: <?php echo $button_text_color; ?>;"><?php echo $button_text; ?></a>
+							<?php endif; ?>
+						<?php endwhile;
+					endif; ?>
 				</div>
 			</div>
 			<?php if($illustration): ?>
@@ -43,3 +60,27 @@ $illustration = get_sub_field('illustration');
 		</div>
 	</div>
 </section>
+
+<?php if( have_rows('buttons') ): ?>
+	<?php while( have_rows('buttons') ) : the_row();
+		$button_text = get_sub_field('button_text');
+		$button_link = get_sub_field('button_link');
+		$button_style = get_sub_field('button_style');
+		$button_target = get_sub_field('button_target');
+		$button_background = get_sub_field('button_background');
+		$button_text_color = get_sub_field('button_text_color');
+		$description = get_sub_field('description');
+		$button_slug = sanitize_title($button_text); ?>
+		<div class="modal--view" id="<?php echo $button_slug; ?>">
+			<div class="modal--service">
+				<i class="fal fa-times"></i>
+				<div class="modal--service-content">
+					<?php echo $description; ?>
+					<?php if($button_link): ?>
+						<a href="<?php echo $button_link; ?>" class="btn"><?php echo __('Download'); ?></a>
+					<?php endif; ?>
+				</div>
+			</div>
+		</div>
+	<?php endwhile; ?>
+<?php endif; ?>
