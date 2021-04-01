@@ -53,13 +53,13 @@ $color_scheme = get_field('color_scheme', 'option');
 								Via Magna Grecia 117 - 00183 Roma
 							</p>
 						<?php endif; ?>
-						<?php if($color_scheme == 'praxi-group'): ?>
+						<!--<?php if($color_scheme == 'praxi-group'): ?>
 							<p>
 								<strong>Orari di apertura</strong>
 								Lun - Ven: 08.00 - 20.00<br>
 								Sab: 08.00 - 18.00
 							</p>
-						<?php endif; ?>
+						<?php endif; ?>-->
 						<p>
 							<strong>Telefono</strong>
 							<?php if($color_scheme == 'praxi-lavoro'): ?>
